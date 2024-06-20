@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>
+            Pizza KMA - Звіт
+        </title>
+        <meta name="author" content="Розумєй Максим"/>
+        <meta name="description" content="Завдання 6. Звіт до обраних піц"/>
+        <meta name="keywords" content="піца, КМА, звіт"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="shortcut icon" href="assets/map-icon.png" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="repotostyle.css"/>
+        <link href="webdatarocks-1.4.15/webdatarocks.min.css" rel="stylesheet"/>
+        <script src="webdatarocks-1.4.15/webdatarocks.toolbar.min.js"></script>
+        <script src="webdatarocks-1.4.15/webdatarocks.js"></script>
+    </head>
+    <body>
+        <div id="page-container">
+            <div id="main-container">
+                <header>
+                    <div id="label-badge">
+                        <div>PIZZA</div>
+                        <div id="KMA">KMA</div>
+                        <picture id="label-badge-picture">
+                            <img src="assets/discount.svg" alt="label badge">
+                        </picture>
+                    </div>
+                    <div id="header-main-div">
+                        <div id="header-flex-container">
+                            <div id="header-info-div">
+                                <address>(044) 222 5 222</address>
+                                <div id="working-hours-label">24 години / 7 днів на тиждень</div>
+                                <div id="free-delivery-label">Безкоштовна доставка піци</div>
+                            </div>
+                            <button id="login-button">Увійти</button>
+                        </div>
+                        <hr/>
+                        <nav id="food-list-nav">
+                            <input type="radio" name="food-list-radio" id="pizza-radio"/>
+                            <label for="pizza-radio"><a href="index.html">Піца</a></label>
+                            <input type="radio" name="food-list-radio" id="report-radio" checked/>
+                            <label for="report-radio"><a href="repoto.html">Звіт</a></label>
+                        </nav>
+                    </div>
+                </header>
+                <main id="main-food-section">
+                    <div id="chosen-category-div">
+                        <h1 id="chosen-category">Звіт до обраних піц</h1>
+                    </div>
+                    <section id="food-preview-section">
+                        <div id="wdr-component"></div>
+                    </section>
+                </main>
+                <footer id="main-footer">
+                    <div>Pizza.24 - практичний проєкт у межах курсу "Основи Веб-технологій"</div>
+                    <div>Національного університету "Києво-Могилянська Академія"</div>
+                    <div>Доставка продуктів не здійснюється</div>
+                </footer>
+            </div>
+        </div>
+        <script type="module" src="repotoscript.js"></script>
+    </body>
+</html>

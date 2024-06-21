@@ -53,9 +53,43 @@ for (let item of cart) {
 const pivot = new WebDataRocks({
     container: "#wdr-component",
     toolbar: true,
+    global: {
+        options: {
+            grid: {
+                showTotals: "off",
+                type: "classic",
+            },
+        },
+    },
     report: {
         dataSource: {
             data: jsonData
+        },
+        slice: {
+            rows: [
+                { uniqueName: "Назва піци" },
+                { uniqueName: "Розмір" },
+            ],
+            measures: [
+                { uniqueName: "Діаметр",
+                    grandTotalCaption: "Діаметр",
+                 },
+                { uniqueName: "Вага",
+                    grandTotalCaption: "Вага",
+                 },
+                { uniqueName: "Ціна",
+                    grandTotalCaption: "Ціна",
+                 },
+                { uniqueName: "Кількість",
+                    grandTotalCaption: "Кількість",
+                 },
+                { uniqueName: "Вартість",
+                    grandTotalCaption: "Вартість",
+                 },
+            ],
+            expands: {
+                expandAll: true
+            }
         }
     }
 });
